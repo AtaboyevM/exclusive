@@ -1,0 +1,29 @@
+@import '../singup/singup.css';
+
+.login-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.login-btn {
+  background-color: #db4444;
+  color: #ffffff;
+  border: none;
+  padding: 16px 48px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+}
+
+.forgot-link {
+  color: #db4444;
+  text-decoration: none;
+  font-size: 16px;
+}

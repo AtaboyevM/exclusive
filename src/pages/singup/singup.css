@@ -1,0 +1,116 @@
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 140px);
+  padding: 60px 0 140px 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.auth-image {
+  flex: 1.2;
+  height: 781px;
+  max-width: 805px;
+  background-color: #cbe4e8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.auth-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.auth-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 371px;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-box h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+  color: #000000;
+}
+
+.auth-subtitle {
+  font-size: 16px;
+  margin: 0 0 40px 0;
+  color: #000000;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.auth-form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #7d8184;
+  outline: none;
+  padding: 8px 0;
+  font-size: 16px;
+  background: transparent;
+}
+
+.auth-form input:focus {
+  border-bottom-color: #000000;
+}
+
+.auth-error {
+  color: #db4444;
+  font-size: 14px;
+}
+
+.auth-btn {
+  width: 100%;
+  height: 56px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.red-btn {
+  background-color: #db4444;
+  color: #ffffff;
+}
+
+.auth-btn:hover {
+  opacity: 0.9;
+}
+
+.auth-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+  font-size: 16px;
+  color: #7d8184;
+}
+
+.auth-bottom a {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: 500;
+}
+

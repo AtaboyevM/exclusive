@@ -1,0 +1,60 @@
+.error-page {
+    width: 100%;
+  margin: 40px auto 140px;
+  padding: 0 120px 0px 120px;
+  box-sizing: border-box;
+  font-family: system-ui}
+
+.error-route {
+  color: gray;
+  margin-bottom: 80px;
+}
+
+.error-route a {
+  color: gray;
+  text-decoration: none;
+}
+
+.error-route span {
+  color: black;
+}
+
+.error-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.error-content h1 {
+  font-size: 110px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 3px;
+  margin: 0 0 40px 0;
+  color: #000;
+}
+
+.error-content p {
+  font-size: 16px;
+  margin: 0 0 80px 0;
+  color: #000;
+}
+
+.error-btn {
+  background-color: #db4444;
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 48px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+.error-btn:hover {
+  opacity: 0.9;
+}
+

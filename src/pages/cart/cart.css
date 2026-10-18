@@ -1,0 +1,162 @@
+.cart-page {
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 120px 0px 120px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.cart-route {
+  color: gray;
+  margin-bottom: 40px;
+}
+
+.cart-route a {
+  color: gray;
+  text-decoration: none;
+}
+
+.cart-route span {
+  color: black;
+}
+
+.cart-header,
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.cart-header p,
+.cart-item p,
+.cart-item input,
+.cart-item .cart-info {
+  width: 25%;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+.cart-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.cart-info img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.cart-del {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-item input {
+  max-width: 60px;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cart-buttons a,
+.cart-buttons button {
+  padding: 12px 30px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.cart-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.cart-coupon {
+  display: flex;
+  gap: 15px;
+}
+
+.cart-coupon input {
+  padding: 12px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  outline: none;
+}
+
+.cart-coupon button {
+  padding: 12px 30px;
+  background: #db4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-total {
+  width: 350px;
+  border: 1.5px solid black;
+  border-radius: 4px;
+  padding: 25px;
+}
+
+.cart-total h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.cart-total div {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-total .cart-line {
+  border-bottom: none;
+  font-weight: bold;
+}
+
+.cart-red-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  background: #db4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+

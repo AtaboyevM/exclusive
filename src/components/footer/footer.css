@@ -1,0 +1,131 @@
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 80px 120px 24px 120px;
+  font-family: var(--font-main);
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 250px;
+}
+
+.footer-logo {
+  font-family: var(--font-logo);
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.footer-col h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fafafa;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fafafa;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-col ul li a {
+  color: #fafafa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.footer-col ul li a:hover {
+  opacity: 0.7;
+}
+
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #ffffff;
+  border-radius: 4px;
+  padding: 8px 14px;
+  gap: 8px;
+  width: 100%;
+  max-width: 217px;
+  height: 48px;
+}
+
+.subscribe-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+}
+
+.subscribe-box input::placeholder {
+  color: #7d8184;
+}
+
+.subscribe-box button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sub-text {
+  font-size: 12px !important;
+  color: #7d8184 !important;
+}
+
+.social-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.social-links a:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #3d3d3d;
+  font-size: 14px;
+}
