@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Cart.css';
+import './cart.css';
 import imgcart from'../../assets/cartimg.png'
 import imgcart1 from'../../assets/cartimg1.png'
 export default function Cart() {
