@@ -129,3 +129,49 @@
   color: #3d3d3d;
   font-size: 14px;
 }
+@media (max-width: 992px) {
+  .footer {
+    padding: 60px 30px 24px 30px;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer-col {
+    max-width: 45%;
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 15px 20px 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .footer-col {
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .subscribe-box {
+    max-width: 260px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+  }
+}

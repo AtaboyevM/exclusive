@@ -133,3 +133,70 @@
 .contact-btn:hover {
   opacity: 0.9;
 }
+
+@media (max-width: 992px) {
+  .contact-page {
+    height: auto;
+    padding: 0 30px;
+    margin: 30px auto 60px;
+  }
+
+  .contact-box {
+    gap: 20px;
+  }
+
+  .contact-info {
+    width: 280px;
+    padding: 30px 20px;
+  }
+
+  .contact-form {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    height: auto;
+    padding: 0 15px;
+    margin: 20px auto 40px;
+  }
+
+  .contact-route {
+    margin-bottom: 24px;
+  }
+
+  .contact-box {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contact-info {
+    width: 100%;
+    padding: 24px 16px;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 24px 16px;
+  }
+
+  .contact-inputs {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .contact-inputs input {
+    width: 100%;
+  }
+
+  .contact-form textarea {
+    margin-bottom: 20px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

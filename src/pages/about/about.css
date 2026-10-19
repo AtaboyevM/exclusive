@@ -213,3 +213,88 @@
   font-size: 14px;
   margin: 0;
 }
+
+@media (max-width: 992px) {
+  .about-page {
+    padding: 0 30px;
+    margin: 30px auto 60px;
+  }
+
+  .about-story {
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .about-story-text h1 {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .about-team {
+    gap: 20px;
+  }
+
+  .about-member-img {
+    height: 300px;
+  }
+
+  .about-team-dots {
+    margin: 30px 0 60px 0;
+  }
+
+  .about-services {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 0 15px;
+    margin: 20px auto 40px;
+  }
+
+  .about-route {
+    margin-bottom: 24px;
+  }
+
+  .about-story {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .about-story-text h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .about-team {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .about-member-img {
+    height: 320px;
+  }
+
+  .about-team-dots {
+    margin: 24px 0 40px 0;
+  }
+
+  .about-services {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

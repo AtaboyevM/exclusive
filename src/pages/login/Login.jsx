@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import app from '../../firebase';
 import './login.css';
-import authImg from '../../assets/kirish.png'
+import authImg from '../../assets/kirish.png';
 
 export default function Login() {
+  const { t } = useTranslation();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -32,20 +34,20 @@ export default function Login() {
 
       <div className="auth-content">
         <div className="auth-box">
-          <h2>Log in to Exclusive</h2>
-          <p className="auth-subtitle">Enter your details below</p>
+          <h2>{t('auth.loginToExclusive')}</h2>
+          <p className="auth-subtitle">{t('auth.enterDetails')}</p>
 
           <form onSubmit={handleLogin} className="auth-form">
             <input
               type="email"
-              placeholder="Email or Phone Number"
+              placeholder={t('auth.emailPlaceholder')}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
             <input
               type="password"
-              placeholder="Password"
+              placeholder={t('auth.passwordPlaceholder')}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
@@ -54,14 +56,18 @@ export default function Login() {
             {error && <span className="auth-error">{error}</span>}
 
             <div className="login-actions">
-              <button type="submit" className="login-btn">Log In</button>
-              <Link to="/forgot-password" className="forgot-link">Forget Password?</Link>
+              <button type="submit" className="login-btn">
+                {t('auth.logIn')}
+              </button>
+              <Link to="/forgot-password" className="forgot-link">
+                {t('auth.forgotPassword')}
+              </Link>
             </div>
           </form>
 
           <div className="auth-bottom">
-            <span>Don't have an account?</span>
-            <Link to="/signup">Sign up</Link>
+            <span>{t('auth.dontHaveAccount')} </span>
+            <Link to="/signup">{t('auth.signUp')}</Link>
           </div>
         </div>
       </div>

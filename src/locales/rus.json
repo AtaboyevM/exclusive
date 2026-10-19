@@ -1,0 +1,169 @@
+{
+  "topNav": {
+    "saleText": "Летняя распродажа купальников и бесплатная экспресс-доставка — СКИДКА 50%!",
+    "shopNow": "Купить сейчас"
+  },
+  "header": {
+    "home": "Главная",
+    "contact": "Контакты",
+    "about": "О нас",
+    "signUp": "Регистрация",
+    "searchPlaceholder": "Что вы ищете?"
+  },
+  "categories": {
+    "womansFashion": "Женская мода",
+    "mensFashion": "Мужская мода",
+    "electronics": "Электроника",
+    "homeLifestyle": "Дом и образ жизни",
+    "medicine": "Медицина",
+    "sportsOutdoor": "Спорт и отдых",
+    "babysToys": "Детские игрушки",
+    "groceriesPets": "Продукты и товары для животных",
+    "healthBeauty": "Здоровье и красота",
+    "phones": "Телефоны",
+    "computers": "Компьютеры",
+    "smartWatch": "Умные часы",
+    "camera": "Камеры",
+    "headPhones": "Наушники",
+    "gaming": "Гейминг"
+  },
+  "home": {
+    "voucherTitle": "Ваучер на скидку до 10%",
+    "shopNow": "Купить сейчас",
+    "todays": "Сегодня",
+    "flashSales": "Горящие скидки",
+    "days": "Дней",
+    "hours": "Часов",
+    "minutes": "Минут",
+    "seconds": "Секунд",
+    "browseByCategory": "Поиск по категориям",
+    "thisMonth": "В этом месяце",
+    "bestSellingProducts": "Хиты продаж",
+    "viewAll": "Посмотреть все",
+    "viewAllProducts": "Все товары",
+    "musicBannerTitle": "Новый уровень вашего звука",
+    "buyNow": "Купить сейчас!",
+    "ourProducts": "Наши товары",
+    "exploreOurProducts": "Исследуйте наши товары",
+    "addToCart": "В корзину",
+    "new": "НОВИНКА"
+  },
+  "services": {
+    "freeDeliveryTitle": "БЕСПЛАТНАЯ И БЫСТРАЯ ДОСТАВКА",
+    "freeDeliveryDesc": "Бесплатная доставка для всех заказов от $140",
+    "customerServiceTitle": "ПОДДЕРЖКА 24/7",
+    "customerServiceDesc": "Круглосуточная поддержка клиентов",
+    "moneyBackTitle": "ГАРАНТИЯ ВОЗВРАТА СРЕДСТВ",
+    "moneyBackDesc": "Возврат денег в течение 30 дней"
+  },
+  "footer": {
+    "subscribe": "Подписаться",
+    "discountText": "Скидка 10% на первый заказ",
+    "emailPlaceholder": "Введите ваш email",
+    "support": "Поддержка",
+    "address": "111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.",
+    "account": "Аккаунт",
+    "myAccount": "Мой профиль",
+    "loginRegister": "Вход / Регистрация",
+    "cart": "Корзина",
+    "wishlist": "Избранное",
+    "shop": "Магазин",
+    "quickLink": "Ссылки",
+    "privacyPolicy": "Политика конфиденциальности",
+    "termsOfUse": "Условия использования",
+    "faq": "Частые вопросы",
+    "contact": "Контакты",
+    "downloadApp": "Скачать приложение",
+    "appOffer": "Экономьте $3 только для новых пользователей",
+    "copyright": "© Авторские права Rimel 2022. Все права защищены"
+  },
+  "contact": {
+    "callToUs": "Позвоните нам",
+    "callDesc": "Мы доступны 24/7, без выходных.",
+    "callPhone": "Телефон: +8801611112222",
+    "writeToUs": "Напишите нам",
+    "writeDesc": "Заполните форму, и мы свяжемся с вами в течение 24 часов.",
+    "namePlaceholder": "Ваше имя *",
+    "emailPlaceholder": "Ваш email *",
+    "phonePlaceholder": "Ваш телефон *",
+    "messagePlaceholder": "Ваше сообщение",
+    "sendMessage": "Отправить сообщение"
+  },
+  "about": {
+    "title": "Наша история",
+    "storyP1": "Запущенный в 2015 году, Exclusive является ведущим онлайн-маркетплейсом Южной Азии с активным присутствием в Бангладеш. При поддержке индивидуальных маркетинговых, аналитических и сервисных решений, Exclusive обслуживает 10 500 продавцов, 300 брендов и 3 миллиона клиентов по всему региону.",
+    "storyP2": "Exclusive предлагает более 1 миллиона товаров и развивается очень быстро. Платформа предоставляет широкий ассортимент в самых разных потребительских категориях.",
+    "stats": {
+      "activeSellers": "Активных продавцов на сайте",
+      "monthlyProductSale": "Ежемесячные продажи товаров",
+      "activeCustomers": "Активных покупателей на сайте",
+      "annualGrossSale": "Годовой валовой объем продаж"
+    },
+    "roles": {
+      "founder": "Основатель и председатель",
+      "managingDirector": "Управляющий директор",
+      "productDesigner": "Дизайнер продукта"
+    }
+  },
+  "auth": {
+    "createAccount": "Создать аккаунт",
+    "enterDetails": "Введите свои данные ниже",
+    "namePlaceholder": "Имя",
+    "emailPlaceholder": "Email или номер телефона",
+    "passwordPlaceholder": "Пароль",
+    "createAccountBtn": "Создать аккаунт",
+    "alreadyHaveAccount": "Уже есть аккаунт?",
+    "logIn": "Войти",
+    "loginToExclusive": "Войти в Exclusive",
+    "forgotPassword": "Забыли пароль?",
+    "dontHaveAccount": "Нет аккаунта?",
+    "signUp": "Регистрация"
+  },
+  "account": {
+    "welcome": "Добро пожаловать!",
+    "manageAccount": "Управление профилем",
+    "myProfile": "Мой профиль",
+    "addressBook": "Адресная книга",
+    "myPaymentOptions": "Способы оплаты",
+    "myOrders": "Мои заказы",
+    "myReturns": "Мои возвраты",
+    "myCancellations": "Мои отмены",
+    "myWishlist": "Мой список желаний",
+    "editProfile": "Редактировать профиль",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "email": "Email",
+    "address": "Адрес",
+    "passwordChanges": "Смена пароля",
+    "currentPassword": "Текущий пароль",
+    "newPassword": "Новый пароль",
+    "confirmNewPassword": "Подтвердите новый пароль",
+    "cancel": "Отмена",
+    "saveChanges": "Сохранить изменения"
+  },
+  "cart": {
+    "product": "Товар",
+    "price": "Цена",
+    "quantity": "Количество",
+    "subtotal": "Итого",
+    "returnToShop": "Вернуться в магазин",
+    "updateCart": "Обновить корзину",
+    "couponPlaceholder": "Код купона",
+    "applyCoupon": "Применить купон",
+    "cartTotal": "Итог корзины",
+    "shipping": "Доставка",
+    "free": "Бесплатно",
+    "total": "Всего",
+    "proceedToCheckout": "Перейти к оформлению"
+  },
+  "notFound": {
+    "title": "404 Not Found",
+    "desc": "Страница, которую вы посетили, не найдена. Вы можете вернуться на главную страницу.",
+    "backHome": "Вернуться на главную"
+  },
+  "productDetail": {
+    "colours": "Цвета:",
+    "size": "Размер:",
+    "buyNow": "Купить сейчас"
+  }
+}

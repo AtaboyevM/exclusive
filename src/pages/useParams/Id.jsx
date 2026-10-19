@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./id.css";
 
 import img3 from "../../assets/today1.png";
@@ -7,8 +8,8 @@ import img4 from "../../assets/today2.png";
 import img5 from "../../assets/today3.png";
 import img6 from "../../assets/today5.png";
 
+import { AiOutlineHeart } from "react-icons/ai";
 
-import { AiOutlineHeart} from "react-icons/ai";
 const productsData = [
   {
     id: 1,
@@ -53,6 +54,7 @@ const productsData = [
 ];
 
 export default function Id() {
+  const { t } = useTranslation();
   const { id } = useParams();
   const [qty, setQty] = useState(1);
 
@@ -62,7 +64,7 @@ export default function Id() {
   return (
     <div className="detail-page">
       <p className="detail-route">
-        <Link to="/">Home</Link> / <span>Gaming</span> / <b>{product.title}</b>
+        <Link to="/">{t("header.home")}</Link> / <span>{t("categories.gaming")}</span> / <b>{product.title}</b>
       </p>
 
       <div className="detail-box">
@@ -85,7 +87,7 @@ export default function Id() {
           <div className="detail-line"></div>
 
           <div className="detail-row">
-            <span>Colours:</span>
+            <span>{t("productDetail.colours")}</span>
             <div className="detail-colors">
               {product.colors.map((color, index) => (
                 <span
@@ -98,7 +100,7 @@ export default function Id() {
           </div>
 
           <div className="detail-row">
-            <span>Size:</span>
+            <span>{t("productDetail.size")}</span>
             <div className="detail-sizes">
               {product.sizes.map((size, index) => (
                 <button key={index} type="button">
@@ -111,18 +113,21 @@ export default function Id() {
           <div className="detail-actions">
             <div className="detail-qty">
               <button
+                type="button"
                 onClick={() => setQty((prev) => (prev > 1 ? prev - 1 : 1))}
               >
                 -
               </button>
               <span>{qty}</span>
-              <button onClick={() => setQty((prev) => prev + 1)}>+</button>
+              <button type="button" onClick={() => setQty((prev) => prev + 1)}>
+                +
+              </button>
             </div>
-            <button className="detail-buy">Buy Now</button>
-            <button className="detail-fav"><AiOutlineHeart /></button>
+            <button className="detail-buy">{t("productDetail.buyNow")}</button>
+            <button className="detail-fav">
+              <AiOutlineHeart />
+            </button>
           </div>
-
-         
         </div>
       </div>
     </div>

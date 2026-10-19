@@ -613,3 +613,144 @@
   color: #000000;
 }
 
+@media (max-width: 992px) {
+  .hero-box {
+    padding: 0 30px;
+  }
+
+  .sidebar {
+    width: 200px;
+    padding-top: 24px;
+  }
+
+  .slider {
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+
+  .flash-section {
+    margin: 40px 0;
+    padding: 0 30px;
+  }
+
+  .category-section,
+  .month-section,
+  .category-img,
+  .explore-section {
+    padding: 0 30px;
+    margin-top: 40px;
+  }
+
+  .flash-grid,
+  .category-list,
+  .products-month {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .explore-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .category-img {
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .category-titles1 {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .services-section {
+    gap: 40px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-box {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 0.5px solid #e5e5e5;
+    padding: 20px 0;
+  }
+
+  .sidebar ul {
+    gap: 12px;
+  }
+
+  .slider {
+    padding: 20px 0 0 0;
+  }
+
+  .slider .swiper {
+    height: 220px;
+  }
+
+  .flash-section {
+    margin: 30px 0;
+    padding: 0 15px;
+  }
+
+  .title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .title-row h2,
+  .category-header h2,
+  .month-header h2,
+  .explore-header h2 {
+    font-size: 26px;
+  }
+
+  .category-section,
+  .month-section,
+  .category-img,
+  .explore-section {
+    padding: 0 15px;
+    margin-top: 30px;
+  }
+
+  .flash-grid,
+  .category-list,
+  .products-month,
+  .explore-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .month-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .category-titles1 .category-title1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .img-div::before {
+    width: 280px;
+    height: 280px;
+  }
+
+  .services-section {
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px auto;
+  }
+}

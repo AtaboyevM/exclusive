@@ -162,3 +162,69 @@
   cursor: pointer;
 }
 
+@media (max-width: 992px) {
+  .account-page {
+    padding: 0 30px;
+    margin: 30px auto 60px;
+  }
+
+  .account-main {
+    gap: 30px;
+  }
+
+  .account-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .account-page {
+    padding: 0 15px;
+    margin: 20px auto 40px;
+  }
+
+  .account-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .account-main {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .account-sidebar {
+    width: 100%;
+    border-bottom: 0.5px solid #e5e5e5;
+    padding-bottom: 10px;
+  }
+
+  .account-sidebar ul {
+    padding-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  .account-card {
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+  }
+
+  .account-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .account-buttons {
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .account-save {
+    flex: 1;
+    padding: 12px 20px;
+  }
+}

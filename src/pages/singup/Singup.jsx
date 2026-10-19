@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import app from '../../firebase';
 import './singup.css';
-import authImg from '../../assets/kirish.png'
+import authImg from '../../assets/kirish.png';
 
 export default function Singup() {
+  const { t } = useTranslation();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -33,27 +35,27 @@ export default function Singup() {
 
       <div className="auth-content">
         <div className="auth-box">
-          <h2>Create an account</h2>
-          <p className="auth-subtitle">Enter your details below</p>
+          <h2>{t('auth.createAccount')}</h2>
+          <p className="auth-subtitle">{t('auth.enterDetails')}</p>
 
           <form onSubmit={handleRegister} className="auth-form">
             <input
               type="text"
-              placeholder="Name"
+              placeholder={t('auth.namePlaceholder')}
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
             />
             <input
               type="email"
-              placeholder="Email or Phone Number"
+              placeholder={t('auth.emailPlaceholder')}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
             <input
               type="password"
-              placeholder="Password"
+              placeholder={t('auth.passwordPlaceholder')}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
@@ -61,12 +63,14 @@ export default function Singup() {
 
             {error && <span className="auth-error">{error}</span>}
 
-            <button type="submit" className="auth-btn red-btn">Create Account</button>
+            <button type="submit" className="auth-btn red-btn">
+              {t('auth.createAccountBtn')}
+            </button>
           </form>
 
           <div className="auth-bottom">
-            <span>Already have account?</span>
-            <Link to="/login">Log in</Link>
+            <span>{t('auth.alreadyHaveAccount')} </span>
+            <Link to="/login">{t('auth.logIn')}</Link>
           </div>
         </div>
       </div>

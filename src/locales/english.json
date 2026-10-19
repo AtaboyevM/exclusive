@@ -1,0 +1,169 @@
+{
+  "topNav": {
+    "saleText": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
+    "shopNow": "ShopNow"
+  },
+  "header": {
+    "home": "Home",
+    "contact": "Contact",
+    "about": "About",
+    "signUp": "Sign Up",
+    "searchPlaceholder": "What are you looking for?"
+  },
+  "categories": {
+    "womansFashion": "Woman's Fashion",
+    "mensFashion": "Men's Fashion",
+    "electronics": "Electronics",
+    "homeLifestyle": "Home Lifestyle",
+    "medicine": "Medicine",
+    "sportsOutdoor": "Sports Outdoor",
+    "babysToys": "Baby's Toys",
+    "groceriesPets": "Groceries Pets",
+    "healthBeauty": "Health Beauty",
+    "phones": "Phones",
+    "computers": "Computers",
+    "smartWatch": "SmartWatch",
+    "camera": "Camera",
+    "headPhones": "HeadPhones",
+    "gaming": "Gaming"
+  },
+  "home": {
+    "voucherTitle": "Up to 10% off Voucher",
+    "shopNow": "Shop Now",
+    "todays": "Today's",
+    "flashSales": "Flash Sales",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "browseByCategory": "Browse By Category",
+    "thisMonth": "This Month",
+    "bestSellingProducts": "Best Selling Products",
+    "viewAll": "View All",
+    "viewAllProducts": "View All Products",
+    "musicBannerTitle": "Enhance Your Music Experience",
+    "buyNow": "Buy Now!",
+    "ourProducts": "Our Products",
+    "exploreOurProducts": "Explore Our Products",
+    "addToCart": "Add To Cart",
+    "new": "NEW"
+  },
+  "services": {
+    "freeDeliveryTitle": "FREE AND FAST DELIVERY",
+    "freeDeliveryDesc": "Free delivery for all orders over $140",
+    "customerServiceTitle": "24/7 CUSTOMER SERVICE",
+    "customerServiceDesc": "Friendly 24/7 customer support",
+    "moneyBackTitle": "MONEY BACK GUARANTEE",
+    "moneyBackDesc": "We return money within 30 days"
+  },
+  "footer": {
+    "subscribe": "Subscribe",
+    "discountText": "Get 10% off your first order",
+    "emailPlaceholder": "Enter your email",
+    "support": "Support",
+    "address": "111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.",
+    "account": "Account",
+    "myAccount": "My Account",
+    "loginRegister": "Login / Register",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "shop": "Shop",
+    "quickLink": "Quick Link",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms Of Use",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "downloadApp": "Download App",
+    "appOffer": "Save $3 with App New User Only",
+    "copyright": "© Copyright Rimel 2022. All rights reserved"
+  },
+  "contact": {
+    "callToUs": "Call To Us",
+    "callDesc": "We are available 24/7, 7 days a week.",
+    "callPhone": "Phone: +8801611112222",
+    "writeToUs": "Write To Us",
+    "writeDesc": "Fill out our form and we will contact you within 24 hours.",
+    "namePlaceholder": "Your Name *",
+    "emailPlaceholder": "Your Email *",
+    "phonePlaceholder": "Your Phone *",
+    "messagePlaceholder": "Your Message",
+    "sendMessage": "Send Message"
+  },
+  "about": {
+    "title": "Our Story",
+    "storyP1": "Launched in 2015, Exclusive is South Asia's premier online shopping marketplace with an active presence in Bangladesh. Supported by wide range of tailored marketing, data and service solutions, Exclusive has 10,500 sellers and 300 brands and serves 3 millions customers across the region.",
+    "storyP2": "Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a diverse assortment in categories ranging from consumer.",
+    "stats": {
+      "activeSellers": "Sellers active our site",
+      "monthlyProductSale": "Monthly Product Sale",
+      "activeCustomers": "Customer active in our site",
+      "annualGrossSale": "Anual gross sale in our site"
+    },
+    "roles": {
+      "founder": "Founder & Chairman",
+      "managingDirector": "Managing Director",
+      "productDesigner": "Product Designer"
+    }
+  },
+  "auth": {
+    "createAccount": "Create an account",
+    "enterDetails": "Enter your details below",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email or Phone Number",
+    "passwordPlaceholder": "Password",
+    "createAccountBtn": "Create Account",
+    "alreadyHaveAccount": "Already have account?",
+    "logIn": "Log in",
+    "loginToExclusive": "Log in to Exclusive",
+    "forgotPassword": "Forgot Password?",
+    "dontHaveAccount": "Don't have an account?",
+    "signUp": "Sign up"
+  },
+  "account": {
+    "welcome": "Welcome!",
+    "manageAccount": "Manage My Account",
+    "myProfile": "My Profile",
+    "addressBook": "Address Book",
+    "myPaymentOptions": "My Payment Options",
+    "myOrders": "My Orders",
+    "myReturns": "My Returns",
+    "myCancellations": "My Cancellations",
+    "myWishlist": "My WishList",
+    "editProfile": "Edit Your Profile",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "address": "Address",
+    "passwordChanges": "Password Changes",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes"
+  },
+  "cart": {
+    "product": "Product",
+    "price": "Price",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal",
+    "returnToShop": "Return To Shop",
+    "updateCart": "Update Cart",
+    "couponPlaceholder": "Coupon Code",
+    "applyCoupon": "Apply Coupon",
+    "cartTotal": "Cart Total",
+    "shipping": "Shipping",
+    "free": "Free",
+    "total": "Total",
+    "proceedToCheckout": "Process to checkout"
+  },
+  "notFound": {
+    "title": "404 Not Found",
+    "desc": "Your visited page not found. You may go home page.",
+    "backHome": "Back to home page"
+  },
+  "productDetail": {
+    "colours": "Colours:",
+    "size": "Size:",
+    "buyNow": "Buy Now"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "topNav": {
+    "saleText": "Barcha cho'milish kiyimlari uchun yozgi chegirma va bepul yetkazib berish — 50% GACHA!",
+    "shopNow": "Xarid qilish"
+  },
+  "header": {
+    "home": "Bosh sahifa",
+    "contact": "Aloqa",
+    "about": "Biz haqimizda",
+    "signUp": "Ro'yxatdan o'tish",
+    "searchPlaceholder": "Nima qidiryapsiz?"
+  },
+  "categories": {
+    "womansFashion": "Ayollar modasi",
+    "mensFashion": "Erkaklar modasi",
+    "electronics": "Elektronika",
+    "homeLifestyle": "Uy va turmush",
+    "medicine": "Tibbiyot",
+    "sportsOutdoor": "Sport va dam olish",
+    "babysToys": "Bolalar o'yinchoqlari",
+    "groceriesPets": "Oziq-ovqat va uy hayvonlari",
+    "healthBeauty": "Go'zallik va salomatlik",
+    "phones": "Telefonlar",
+    "computers": "Kompyuterlar",
+    "smartWatch": "Smart soatlar",
+    "camera": "Kameralar",
+    "headPhones": "Quloqchinlar",
+    "gaming": "Geyming"
+  },
+  "home": {
+    "voucherTitle": "10% gacha chegirma vaucheri",
+    "shopNow": "Xarid qilish",
+    "todays": "Bugungi",
+    "flashSales": "Tezkor aksiyalar",
+    "days": "Kun",
+    "hours": "Soat",
+    "minutes": "Daqiqa",
+    "seconds": "Soniya",
+    "browseByCategory": "Kategoriyalar bo'yicha ko'rish",
+    "thisMonth": "Shu oyda",
+    "bestSellingProducts": "Eng ko'p sotilgan mahsulotlar",
+    "viewAll": "Barchasi",
+    "viewAllProducts": "Barcha mahsulotlar",
+    "musicBannerTitle": "Musiqa zavqini yangi bosqichga ko'taring",
+    "buyNow": "Hoziroq xarid qiling!",
+    "ourProducts": "Bizning mahsulotlar",
+    "exploreOurProducts": "Mahsulotlarimiz bilan tanishing",
+    "addToCart": "Savatga qo'shish",
+    "new": "YANGI"
+  },
+  "services": {
+    "freeDeliveryTitle": "BEPUL VA TEZKOR YETKAZIB BERISH",
+    "freeDeliveryDesc": "$140 dan yuqori barcha buyurtmalar uchun bepul yetkazib berish",
+    "customerServiceTitle": "24/7 MIJOZLARGA XIZMAT",
+    "customerServiceDesc": "24/7 mijozlarni qo'llab-quvvatlash",
+    "moneyBackTitle": "PULNI QAYTARISH KAFOLATI",
+    "moneyBackDesc": "30 kun ichida pulni qaytarib beramiz"
+  },
+  "footer": {
+    "subscribe": "Obuna bo'ling",
+    "discountText": "Birinchi buyurtmangiz uchun 10% chegirma oling",
+    "emailPlaceholder": "Emailingizni kiriting",
+    "support": "Qo'llab-quvvatlash",
+    "address": "111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.",
+    "account": "Hisobim",
+    "myAccount": "Mening profilim",
+    "loginRegister": "Kirish / Ro'yxatdan o'tish",
+    "cart": "Savat",
+    "wishlist": "Saralanganlar",
+    "shop": "Do'kon",
+    "quickLink": "Tezkor havolalar",
+    "privacyPolicy": "Maxfiylik siyosati",
+    "termsOfUse": "Foydalanish shartlari",
+    "faq": "Ko'p beriladigan savollar",
+    "contact": "Aloqa",
+    "downloadApp": "Ilovani yuklab oling",
+    "appOffer": "Faqat yangi foydalanuvchilar uchun $3 tejang",
+    "copyright": "© Rimel 2022. Barcha huquqlar himoyalangan"
+  },
+  "contact": {
+    "callToUs": "Bizga qo'ng'iroq qiling",
+    "callDesc": "Biz haftada 7 kun, 24 soat xizmatingizdamiz.",
+    "callPhone": "Telefon: +8801611112222",
+    "writeToUs": "Bizga yozing",
+    "writeDesc": "Formani to'ldiring va biz 24 soat ichida siz bilan bog'lanamiz.",
+    "namePlaceholder": "Ismingiz *",
+    "emailPlaceholder": "Emailingiz *",
+    "phonePlaceholder": "Telefon raqamingiz *",
+    "messagePlaceholder": "Xabaringiz",
+    "sendMessage": "Xabar yuborish"
+  },
+  "about": {
+    "title": "Bizning tariximiz",
+    "storyP1": "2015-yilda ishga tushirilgan Exclusive — Janubiy Osiyodagi yetakchi onlayn savdo maydoni bo'lib, Bangladeshda faol faoliyat yuritadi. Keng qamrovli marketing, ma'lumotlar va xizmat yechimlari bilan qo'llab-quvvatlangan holda, Exclusive mintaqa bo'ylab 10 500 sotuvchi, 300 brend va 3 million mijozga xizmat ko'rsatadi.",
+    "storyP2": "Exclusive taklif qilish uchun 1 milliondan ortiq mahsulotga ega bo'lib, juda tez rivojlanmoqda. Exclusive iste'molchilar uchun turli toifalardagi keng assortimentni taqdim etadi.",
+    "stats": {
+      "activeSellers": "Saytimizdagi faol sotuvchilar",
+      "monthlyProductSale": "Oylik mahsulot savdosi",
+      "activeCustomers": "Saytimizdagi faol xaridorlar",
+      "annualGrossSale": "Saytimizdagi yillik yalpi savdo"
+    },
+    "roles": {
+      "founder": "Asoschi va Boshqaruv raisi",
+      "managingDirector": "Boshqaruvchi direktor",
+      "productDesigner": "Mahsulot dizayneri"
+    }
+  },
+  "auth": {
+    "createAccount": "Hisob yaratish",
+    "enterDetails": "Ma'lumotlaringizni quyida kiriting",
+    "namePlaceholder": "Ism",
+    "emailPlaceholder": "Email yoki telefon raqami",
+    "passwordPlaceholder": "Parol",
+    "createAccountBtn": "Hisob yaratish",
+    "alreadyHaveAccount": "Hisobingiz bormi?",
+    "logIn": "Kirish",
+    "loginToExclusive": "Exclusive hisobiga kirish",
+    "forgotPassword": "Parolni unutdingizmi?",
+    "dontHaveAccount": "Hisobingiz yo'qmi?",
+    "signUp": "Ro'yxatdan o'tish"
+  },
+  "account": {
+    "welcome": "Xush kelibsiz!",
+    "manageAccount": "Hisobni boshqarish",
+    "myProfile": "Mening profilim",
+    "addressBook": "Manzillar daftari",
+    "myPaymentOptions": "To'lov usullari",
+    "myOrders": "Buyurtmalarim",
+    "myReturns": "Qaytarilganlar",
+    "myCancellations": "Bekor qilinganlar",
+    "myWishlist": "Mening saralanganlarim",
+    "editProfile": "Profilingizni tahrirlash",
+    "firstName": "Ism",
+    "lastName": "Familiya",
+    "email": "Email",
+    "address": "Manzil",
+    "passwordChanges": "Parolni o'zgartirish",
+    "currentPassword": "Joriy parol",
+    "newPassword": "Yangi parol",
+    "confirmNewPassword": "Yangi parolni tasdiqlang",
+    "cancel": "Bekor qilish",
+    "saveChanges": "O'zgarishlarni saqlash"
+  },
+  "cart": {
+    "product": "Mahsulot",
+    "price": "Narxi",
+    "quantity": "Miqdori",
+    "subtotal": "Oraliq jami",
+    "returnToShop": "Do'konga qaytish",
+    "updateCart": "Savatni yangilash",
+    "couponPlaceholder": "Kupon kodi",
+    "applyCoupon": "Kuponni qo'llash",
+    "cartTotal": "Savat jami",
+    "shipping": "Yetkazib berish",
+    "free": "Bepul",
+    "total": "Jami",
+    "proceedToCheckout": "Buyurtmani rasmiylashtirish"
+  },
+  "notFound": {
+    "title": "404 Not Found",
+    "desc": "Siz tashrif buyurgan sahifa topilmadi. Bosh sahifaga qaytishingiz mumkin.",
+    "backHome": "Bosh sahifaga qaytish"
+  },
+
+  "productDetail": {
+    "colours": "Ranglar:",
+    "size": "O'lcham:",
+    "buyNow": "Hoziroq xarid qilish"
+  }
+}
