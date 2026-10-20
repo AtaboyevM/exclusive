@@ -64,7 +64,8 @@ export default function Id() {
   return (
     <div className="detail-page">
       <p className="detail-route">
-        <Link to="/">{t("header.home")}</Link> / <span>{t("categories.gaming")}</span> / <b>{product.title}</b>
+        <Link to="/">{t("header.home")}</Link> /{" "}
+        <span>{t("categories.gaming")}</span> / <b>{product.title}</b>
       </p>
 
       <div className="detail-box">

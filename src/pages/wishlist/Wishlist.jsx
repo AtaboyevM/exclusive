@@ -29,8 +29,11 @@ const Wishlist = () => {
           <div className="pro-divs">
             <img src={pr1} alt="" />
             <h2 className="product-title">The north coatch</h2>
-            <p>$260 <span>360$</span></p>
-            <button className="addwish"
+            <p>
+              $260 <span>360$</span>
+            </p>
+            <button
+              className="addwish"
               onClick={() =>
                 dispatch(
                   addToCart({
@@ -38,7 +41,7 @@ const Wishlist = () => {
                     name: "The north coatch",
                     price: 260,
                     img: pr1,
-                  })
+                  }),
                 )
               }
             >
@@ -49,8 +52,11 @@ const Wishlist = () => {
           <div className="pro-divs">
             <img src={pr2} alt="" />
             <h2 className="product-title">Gucci duffle bag</h2>
-            <p>$960 <span>1160$</span></p>
-            <button className="addwish"
+            <p>
+              $960 <span>1160$</span>
+            </p>
+            <button
+              className="addwish"
               onClick={() =>
                 dispatch(
                   addToCart({
@@ -58,7 +64,7 @@ const Wishlist = () => {
                     name: "Gucci duffle bag",
                     price: 960,
                     img: pr2,
-                  })
+                  }),
                 )
               }
             >
@@ -69,8 +75,11 @@ const Wishlist = () => {
           <div className="pro-divs">
             <img src={pr3} alt="" />
             <h2 className="product-title">RGB liquid CPU Cooler</h2>
-            <p>$160 <span>170$</span></p>
-            <button className="addwish"
+            <p>
+              $160 <span>170$</span>
+            </p>
+            <button
+              className="addwish"
               onClick={() =>
                 dispatch(
                   addToCart({
@@ -78,7 +87,7 @@ const Wishlist = () => {
                     name: "RGB liquid CPU Cooler",
                     price: 160,
                     img: pr3,
-                  })
+                  }),
                 )
               }
             >
@@ -90,7 +99,8 @@ const Wishlist = () => {
             <img src={pr4} alt="" />
             <h2 className="product-title">Small BookSelf</h2>
             <p>360$</p>
-            <button className="addwish"
+            <button
+              className="addwish"
               onClick={() =>
                 dispatch(
                   addToCart({
@@ -98,7 +108,7 @@ const Wishlist = () => {
                     name: "Small BookSelf",
                     price: 360,
                     img: pr4,
-                  })
+                  }),
                 )
               }
             >
