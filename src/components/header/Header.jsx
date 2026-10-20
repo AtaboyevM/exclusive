@@ -8,13 +8,18 @@ import { FiShoppingBag, FiStar, FiLogOut } from "react-icons/fi";
 import { MdOutlineCancel } from "react-icons/md";
 import { getAuth, signOut } from "firebase/auth";
 import app from "../../firebase";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [ochiq, setOchiq] = useState(false);
-  
+
+  const likeCount = useSelector((state) => state.like?.count || 0);
+
   const navigate = useNavigate();
   const auth = getAuth(app);
+
+  const cartItems = useSelector((state) => state.cart.cartItems);
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
@@ -81,12 +86,20 @@ const Header = () => {
             </button>
           </div>
 
-          <Link to="/wishlist" className="action-icon" aria-label="Wishlist">
-            <CiHeart size={24} />
+          <Link
+            to="/wishlist"
+            className="action-icon wishlist-icon-wrapper"
+            aria-label="Wishlist"
+          >
+            <CiHeart size={26} />
+            {likeCount > 0 && <span className="like-badge">{likeCount}</span>}
           </Link>
 
-          <Link to="/cart" className="action-icon" aria-label="Cart">
-            <IoCartOutline size={24} />
+          <Link to="/cart" className="action-icon cart-icon-wrapper">
+            <IoCartOutline size={26} />
+            {cartItems.length > 0 && (
+              <span className="cart-badge">{cartItems.length}</span>
+            )}
           </Link>
 
           <div className="user-box">

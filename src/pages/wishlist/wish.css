@@ -1,3 +1,38 @@
 .margin-btm {
   margin-bottom: 90px;
 }
+.pro-divs {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.addwish {
+  width: 100%;
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0 0 4px 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition:
+    background-color 0.25s ease,
+    opacity 0.2s ease;
+  margin-top: 10px;
+}
+
+.addwish:hover {
+  background-color: #db4444;
+}
+
+.addwish:active {
+  transform: scale(0.98);
+}

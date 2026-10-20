@@ -464,7 +464,6 @@
   z-index: 2;
 }
 
-
 .explore-section {
   width: 100%;
   margin-top: 60px;
@@ -564,7 +563,7 @@
   align-items: center;
   gap: 88px;
   box-sizing: border-box;
-  font-family: system-ui
+  font-family: system-ui;
 }
 
 .service-card {
@@ -572,6 +571,45 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.p-img {
+  position: relative;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-icons {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 2;
+}
+
+.card-icon-btn {
+  width: 34px;
+  height: 34px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon-btn:hover {
+  transform: scale(1.08);
 }
 
 .icon-circle {

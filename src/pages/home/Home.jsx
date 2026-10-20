@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
+import { useDispatch, useSelector } from "react-redux";
+import { toggleLike } from "../../redux/like";
+import { updateTime } from "../../redux/clockSlice";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 
@@ -21,6 +23,7 @@ import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { BsSmartwatch } from "react-icons/bs";
 import { FiCamera } from "react-icons/fi";
 import { IoGameControllerOutline } from "react-icons/io5";
+import { IoHeart, IoHeartOutline, IoEyeOutline } from "react-icons/io5";
 
 import pr1 from "../../assets/pr1.png";
 import pr2 from "../../assets/pr2.png";
@@ -42,9 +45,26 @@ import { RiCustomerService2Line } from "react-icons/ri";
 export default function Home() {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const likedIds = useSelector((state) => state.like?.likedIds || []);
+  const time = useSelector((state) => state.clock?.time);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      dispatch(updateTime());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [dispatch]);
 
   const openDetail = (id) => {
     navigate(`/product/${id}`);
+  };
+
+  const handleLikeClick = (e, id) => {
+    e.stopPropagation();
+    dispatch(toggleLike(id));
   };
 
   return (
@@ -107,43 +127,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Today section start */}
       <section className="flash-section">
         <div className="flash-header">
           <div className="tag">{t("home.todays")}</div>
           <div className="title-row">
             <h2>{t("home.flashSales")}</h2>
             <div className="timer">
-              <div>
-                <small>{t("home.days")}</small>
-                <b>03</b>
-              </div>
-              :
-              <div>
-                <small>{t("home.hours")}</small>
-                <b>23</b>
-              </div>
-              :
-              <div>
-                <small>{t("home.minutes")}</small>
-                <b>19</b>
-              </div>
-              :
-              <div>
-                <small>{t("home.seconds")}</small>
-                <b>56</b>
-              </div>
+              <div style={{ fontSize: "20px", fontWeight: "bold" }}>{time}</div>
             </div>
           </div>
         </div>
 
         <div className="flash-grid">
-          <div
-            className="p-card"
-            onClick={() => openDetail(1)}
-            style={{ cursor: "pointer" }}
-          >
+          <div className="p-card" onClick={() => openDetail(1)}>
             <div className="p-img">
+              <div className="card-icons">
+                <button
+                  type="button"
+                  className={`card-icon-btn ${likedIds.includes(1) ? "liked" : ""}`}
+                  onClick={(e) => handleLikeClick(e, 1)}
+                >
+                  {likedIds.includes(1) ? (
+                    <IoHeart color="#db4444" size={18} />
+                  ) : (
+                    <IoHeartOutline size={18} />
+                  )}
+                </button>
+                <button
+                  type="button"
+                  className="card-icon-btn"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <IoEyeOutline size={18} />
+                </button>
+              </div>
               <img src={img3} alt="HAVIT HV-G92 Gamepad" />
             </div>
             <h4>HAVIT HV-G92 Gamepad</h4>
@@ -153,12 +170,28 @@ export default function Home() {
             </div>
           </div>
 
-          <div
-            className="p-card"
-            onClick={() => openDetail(2)}
-            style={{ cursor: "pointer" }}
-          >
+          <div className="p-card" onClick={() => openDetail(2)}>
             <div className="p-img">
+              <div className="card-icons">
+                <button
+                  type="button"
+                  className={`card-icon-btn ${likedIds.includes(2) ? "liked" : ""}`}
+                  onClick={(e) => handleLikeClick(e, 2)}
+                >
+                  {likedIds.includes(2) ? (
+                    <IoHeart color="#db4444" size={18} />
+                  ) : (
+                    <IoHeartOutline size={18} />
+                  )}
+                </button>
+                <button
+                  type="button"
+                  className="card-icon-btn"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <IoEyeOutline size={18} />
+                </button>
+              </div>
               <img src={img4} alt="AK-900 Wired Keyboard" />
             </div>
             <h4>AK-900 Wired Keyboard</h4>
@@ -168,12 +201,28 @@ export default function Home() {
             </div>
           </div>
 
-          <div
-            className="p-card"
-            onClick={() => openDetail(3)}
-            style={{ cursor: "pointer" }}
-          >
+          <div className="p-card" onClick={() => openDetail(3)}>
             <div className="p-img">
+              <div className="card-icons">
+                <button
+                  type="button"
+                  className={`card-icon-btn ${likedIds.includes(3) ? "liked" : ""}`}
+                  onClick={(e) => handleLikeClick(e, 3)}
+                >
+                  {likedIds.includes(3) ? (
+                    <IoHeart color="#db4444" size={18} />
+                  ) : (
+                    <IoHeartOutline size={18} />
+                  )}
+                </button>
+                <button
+                  type="button"
+                  className="card-icon-btn"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <IoEyeOutline size={18} />
+                </button>
+              </div>
               <img src={img5} alt="IPS LCD Gaming Monitor" />
             </div>
             <h4>IPS LCD Gaming Monitor</h4>
@@ -183,12 +232,28 @@ export default function Home() {
             </div>
           </div>
 
-          <div
-            className="p-card"
-            onClick={() => openDetail(4)}
-            style={{ cursor: "pointer" }}
-          >
+          <div className="p-card" onClick={() => openDetail(4)}>
             <div className="p-img">
+              <div className="card-icons">
+                <button
+                  type="button"
+                  className={`card-icon-btn ${likedIds.includes(4) ? "liked" : ""}`}
+                  onClick={(e) => handleLikeClick(e, 4)}
+                >
+                  {likedIds.includes(4) ? (
+                    <IoHeart color="#db4444" size={18} />
+                  ) : (
+                    <IoHeartOutline size={18} />
+                  )}
+                </button>
+                <button
+                  type="button"
+                  className="card-icon-btn"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <IoEyeOutline size={18} />
+                </button>
+              </div>
               <img src={img6} alt="S-Series Comfort Chair" />
             </div>
             <h4>S-Series Comfort Chair</h4>
@@ -199,9 +264,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Today section end */}
 
-      {/* Category section start */}
       <section className="category-section">
         <div className="category-header">
           <div className="category-title">{t("home.ourProducts")}</div>
@@ -213,36 +276,29 @@ export default function Home() {
             <CiMobile3 className="icon" />
             <p>{t("categories.phones")}</p>
           </div>
-
           <div className="cat-card">
             <HiOutlineDesktopComputer className="icon" />
             <p>{t("categories.computers")}</p>
           </div>
-
           <div className="cat-card">
             <BsSmartwatch className="icon" />
             <p>{t("categories.smartWatch")}</p>
           </div>
-
           <div className="cat-card active">
             <FiCamera className="icon" />
             <p>{t("categories.camera")}</p>
           </div>
-
           <div className="cat-card">
             <CiHeadphones className="icon" />
             <p>{t("categories.headPhones")}</p>
           </div>
-
           <div className="cat-card">
             <IoGameControllerOutline className="icon" />
             <p>{t("categories.gaming")}</p>
           </div>
         </div>
       </section>
-      {/* Category section end */}
 
-      {/* Month section start */}
       <section className="month-section">
         <div className="month-hero">
           <div className="month-header">
@@ -257,7 +313,29 @@ export default function Home() {
         </div>
         <div className="products-month">
           <div className="pro-divs">
-            <img src={pr1} alt="" />
+            <div className="p-img">
+              <div className="card-icons">
+                <button
+                  type="button"
+                  className={`card-icon-btn ${likedIds.includes(5) ? "liked" : ""}`}
+                  onClick={(e) => handleLikeClick(e, 5)}
+                >
+                  {likedIds.includes(5) ? (
+                    <IoHeart color="#db4444" size={18} />
+                  ) : (
+                    <IoHeartOutline size={18} />
+                  )}
+                </button>
+                <button
+                  type="button"
+                  className="card-icon-btn"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <IoEyeOutline size={18} />
+                </button>
+              </div>
+              <img src={pr1} alt="" />
+            </div>
             <h2 className="product-title">The north coatch</h2>
             <p>
               $260 <span>360$</span>
@@ -265,7 +343,29 @@ export default function Home() {
           </div>
 
           <div className="pro-divs">
-            <img src={pr2} alt="" />
+            <div className="p-img">
+              <div className="card-icons">
+                <button
+                  type="button"
+                  className={`card-icon-btn ${likedIds.includes(6) ? "liked" : ""}`}
+                  onClick={(e) => handleLikeClick(e, 6)}
+                >
+                  {likedIds.includes(6) ? (
+                    <IoHeart color="#db4444" size={18} />
+                  ) : (
+                    <IoHeartOutline size={18} />
+                  )}
+                </button>
+                <button
+                  type="button"
+                  className="card-icon-btn"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <IoEyeOutline size={18} />
+                </button>
+              </div>
+              <img src={pr2} alt="" />
+            </div>
             <h2 className="product-title">Gucci duffle bag</h2>
             <p>
               $960 <span>1160$</span>
@@ -273,7 +373,29 @@ export default function Home() {
           </div>
 
           <div className="pro-divs">
-            <img src={pr3} alt="" />
+            <div className="p-img">
+              <div className="card-icons">
+                <button
+                  type="button"
+                  className={`card-icon-btn ${likedIds.includes(7) ? "liked" : ""}`}
+                  onClick={(e) => handleLikeClick(e, 7)}
+                >
+                  {likedIds.includes(7) ? (
+                    <IoHeart color="#db4444" size={18} />
+                  ) : (
+                    <IoHeartOutline size={18} />
+                  )}
+                </button>
+                <button
+                  type="button"
+                  className="card-icon-btn"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <IoEyeOutline size={18} />
+                </button>
+              </div>
+              <img src={pr3} alt="" />
+            </div>
             <h2 className="product-title">RGB liquid CPU Cooler</h2>
             <p>
               $160 <span>170$</span>
@@ -281,29 +403,47 @@ export default function Home() {
           </div>
 
           <div className="pro-divs">
-            <img src={pr4} alt="" />
+            <div className="p-img">
+              <div className="card-icons">
+                <button
+                  type="button"
+                  className={`card-icon-btn ${likedIds.includes(8) ? "liked" : ""}`}
+                  onClick={(e) => handleLikeClick(e, 8)}
+                >
+                  {likedIds.includes(8) ? (
+                    <IoHeart color="#db4444" size={18} />
+                  ) : (
+                    <IoHeartOutline size={18} />
+                  )}
+                </button>
+                <button
+                  type="button"
+                  className="card-icon-btn"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <IoEyeOutline size={18} />
+                </button>
+              </div>
+              <img src={pr4} alt="" />
+            </div>
             <h2 className="product-title">Small BookSelf</h2>
             <p>360$</p>
           </div>
         </div>
       </section>
-      {/* Month section end */}
 
-      {/* category img section start */}
       <section className="category-img">
         <h1 className="category-title1">{t("home.ourProducts")}</h1>
         <div className="category-titles1">
           <h2 className="category-title1">{t("home.musicBannerTitle")}</h2>
           <button className="img-btn1">{t("home.buyNow")}</button>
         </div>
-
         <div className="category-imgs">
           <div className="img-div">
             <img src={ctgimg} alt="" />
           </div>
         </div>
       </section>
-      {/* category img section end */}
 
       <section className="explore-section">
         <div className="explore-header">
@@ -312,53 +452,63 @@ export default function Home() {
         </div>
 
         <div className="explore-grid">
-          <div className="product-card">
-            <img src={ex1} alt="Breed Dry Dog Food" />
-            <h4>Breed Dry Dog Food</h4>
-            <p className="price">$100</p>
-          </div>
-
-          <div className="product-card">
-            <img src={ex2} alt="CANON EOS DSLR Camera" />
-            <h4>CANON EOS DSLR Camera</h4>
-            <p className="price">$360</p>
-          </div>
-
-          <div className="product-card">
-            <img src={ex3} alt="ASUS FHD Gaming Laptop" />
-            <h4>ASUS FHD Gaming Laptop</h4>
-            <p className="price">$700</p>
-          </div>
-
-          <div className="product-card">
-            <img src={ex4} alt="Curology Product Set" />
-            <h4>Curology Product Set</h4>
-            <p className="price">$500</p>
-          </div>
-
-          <div className="product-card">
-            <img src={ex5} alt="Kids Electric Car" />
-            <h4>Kids Electric Car</h4>
-            <p className="price">$960</p>
-          </div>
-
-          <div className="product-card">
-            <img src={ex6} alt="Jr. Zoom Soccer Cleats" />
-            <h4>Jr. Zoom Soccer Cleats</h4>
-            <p className="price">$1160</p>
-          </div>
-
-          <div className="product-card">
-            <img src={ex7} alt="GP11 Shooter USB Gamepad" />
-            <h4>GP11 Shooter USB Gamepad</h4>
-            <p className="price">$660</p>
-          </div>
-
-          <div className="product-card">
-            <img src={ex3} alt="Quilted Satin Jacket" />
-            <h4>Quilted Satin Jacket</h4>
-            <p className="price">$660</p>
-          </div>
+          {[
+            { id: 9, img: ex1, title: "Breed Dry Dog Food", price: "$100" },
+            { id: 10, img: ex2, title: "CANON EOS DSLR Camera", price: "$360" },
+            {
+              id: 11,
+              img: ex3,
+              title: "ASUS FHD Gaming Laptop",
+              price: "$700",
+            },
+            { id: 12, img: ex4, title: "Curology Product Set", price: "$500" },
+            { id: 13, img: ex5, title: "Kids Electric Car", price: "$960" },
+            {
+              id: 14,
+              img: ex6,
+              title: "Jr. Zoom Soccer Cleats",
+              price: "$1160",
+            },
+            {
+              id: 15,
+              img: ex7,
+              title: "GP11 Shooter USB Gamepad",
+              price: "$660",
+            },
+            { id: 16, img: ex3, title: "Quilted Satin Jacket", price: "$660" },
+          ].map((item) => (
+            <div
+              className="product-card"
+              key={item.id}
+              onClick={() => openDetail(item.id)}
+            >
+              <div className="p-img">
+                <div className="card-icons">
+                  <button
+                    type="button"
+                    className={`card-icon-btn ${likedIds.includes(item.id) ? "liked" : ""}`}
+                    onClick={(e) => handleLikeClick(e, item.id)}
+                  >
+                    {likedIds.includes(item.id) ? (
+                      <IoHeart color="#db4444" size={18} />
+                    ) : (
+                      <IoHeartOutline size={18} />
+                    )}
+                  </button>
+                  <button
+                    type="button"
+                    className="card-icon-btn"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <IoEyeOutline size={18} />
+                  </button>
+                </div>
+                <img src={item.img} alt={item.title} />
+              </div>
+              <h4>{item.title}</h4>
+              <p className="price">{item.price}</p>
+            </div>
+          ))}
         </div>
 
         <div className="explore-footer">
@@ -376,7 +526,6 @@ export default function Home() {
           <h3>{t("services.freeDeliveryTitle")}</h3>
           <p>{t("services.freeDeliveryDesc")}</p>
         </div>
-
         <div className="service-card">
           <div className="icon-circle">
             <div className="icon-inner">
@@ -386,7 +535,6 @@ export default function Home() {
           <h3>{t("services.customerServiceTitle")}</h3>
           <p>{t("services.customerServiceDesc")}</p>
         </div>
-
         <div className="service-card">
           <div className="icon-circle">
             <div className="icon-inner">
